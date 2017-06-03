@@ -2,11 +2,12 @@
 
 print "请输入有多少片比萨饼，然后按 Enter: "
 pizzas = gets
-
+pizzas = pizzas.to_i
 print "请输入有多少人要吃，然后按 Enter: "
 people = gets
-
+people = people.to_i
 # .....
-
-puts "每人可分得几片: _________ 片"
-puts "还剩下几片: _________ 片"
+pieces = pizzas / people
+remains = pizzas % people
+puts "每人可分得几片: #{pieces} 片"
+puts "还剩下几片: #{remains} 片"

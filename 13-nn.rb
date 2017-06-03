@@ -9,3 +9,14 @@ n = gets
 #   end
 # end
 
+n = n.to_i
+i = 0
+
+while (i<=n)
+  j = 0
+  while (j<=n)
+    print i,"x",j, "=",i*j,"\n"
+     j += 1
+  end
+  i += 1
+end
